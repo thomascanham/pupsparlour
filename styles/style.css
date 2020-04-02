@@ -1,0 +1,403 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+.main { /*this is the main container for all page content */
+  padding: 0px 0px;
+  background-color: white;
+}
+
+/* heading image */
+.banner {
+  width: 100%;
+}
+
+.bannersmall {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
+  .bannersmall {
+    display: block;
+  }
+  .body {
+    font-size: 18px;
+  }
+}
+
+
+/* new nav */
+.topnav {
+  overflow: hidden;
+  background-color: #92C5EB;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(146, 197, 235, 0.3), 0 6px 20px 0 rgba(146, 197, 235, 0.29);
+}
+
+.topnav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  color: grey;
+}
+
+.topnav .icon {
+  display: none;
+  float: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav a {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+
+
+/* homepage content */
+
+.homepage {
+  margin: 50px auto;
+}
+
+.homepage p {
+  margin: 20px auto;
+  padding-bottom: 50px auto;
+}
+
+.homeHeader {
+  width: 50%;
+  margin: 20px auto;
+}
+
+#radius {
+  border-radius: 5px;
+}
+
+#radius:hover {
+  box-shadow: 0 4px 8px 0 rgba(146, 197, 235, 0.5), 0 6px 20px 0 rgba(146, 197, 235, 0.49);
+}
+
+.homepage a {
+  color:#92C5EB;
+  text-decoration: none;
+}
+
+.homepage a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* Treatments */
+.treatments {
+  margin: 50px auto;
+  width: 95%;
+}
+
+.treatment {
+  border-bottom: 2px solid #92C5EB;
+  padding: 40px 20px;
+  margin: 20px auto;
+  display: block;
+}
+
+.treatment h2 {
+  font-weight: bold;
+  color: #92c5eb;
+}
+
+.treatment-img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.treatment p {
+  margin: 15px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* widens the treatments when on a mobile screen */
+@media screen and (max-width: 600px) {
+  .treatments {
+    width: 100%;
+  }
+  .treatment {
+    padding: 40px 4px;
+  }
+  .treatment p {
+    margin: 15px 5px;
+  }
+}
+
+
+
+/* Meet The Groomer*/
+.meet {
+  margin: 50px auto;
+  width: 85%;
+}
+
+.meet h2 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.meet img {
+  width: 500px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.meet h4 {
+  margin: 40px 0 20px 0;
+}
+
+.meet p {
+  padding-top: 15px;
+
+}
+
+/* Gallery */
+.gallerycontent {
+  margin: 50px auto;
+  width: 85%;
+}
+
+.gallerycontent a {
+  text-decoration: none;
+  color: #92C5EB;
+}
+
+.gallerycontent a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Contact */
+.contactpage {
+  margin: 50px auto;
+  width: 85%;
+  font-size: 18px;
+}
+
+.contactpage h2 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+
+
+.contactpage a {
+  color: black;
+}
+
+.contactpage a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.contacticon {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contacticon img {
+  width: 130px;
+ 
+}
+
+.contacticon h4 {
+  color: #92C5EB;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contacticon a {
+  color: #92C5EB;
+}
+
+.contacticon a:hover {
+  text-decoration: none;
+}
+
+.contacticon P {
+  font-weight: bold;
+}
+
+.openingtimes {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.openingtimes ul {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .contacticon {
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  margin: 50px auto;
+  width: 85%;
+}
+
+.testimonial h2 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.bubble {
+  border: 2px solid #92C5EB;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 50px;
+  margin: 40px auto;
+  width: 80%;
+  display: block;
+  overflow: auto;
+}
+
+.darker {
+  border-color: #92C5EB;
+  background-color: white;
+}
+
+.bubble img {
+  float: left;
+  max-width: 80px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.bubble img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+.bubble .quote {
+  font-style: italic;
+  color: #92C5EB;
+  margin: 5px;
+}
+
+.backtotop {
+  color: #92C5EB;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .bubble {
+    margin: 40px auto;
+    width: 100%;
+  }
+  .testimonial {
+    width: 95%
+  }
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+  margin: 40px 0 0 0;;
+  background-color: #586B7A;
+  padding: 30px 30px 30px 30px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.social li {
+  display: inline-block;
+  width: 40px;
+  padding-bottom: 20px;
+}
+
+
+
+/* styling classes for fonts */
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+/* styling the credentials */
+
+#cityandguild {
+  width: 100%;
+}
+
+#spotlight {
+  width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+
+  #cityandguild {
+    width: 30%;
+  }
+
+  #spotlight {
+    width: 40%;
+  }
+}
+
+
