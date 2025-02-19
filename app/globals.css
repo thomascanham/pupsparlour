@@ -21,6 +21,13 @@
   /* Button & Hover States */
   --color-button: #6daedb;         /* Button background */
   --color-button-hover: #5c9cc7;   /* Darker hover effect */
+
+  --container-width-xs: 100%;   /* Mobile full width */
+  --container-width-sm: 540px;  /* Small screens */
+  --container-width-md: 720px;  /* Tablets */
+  --container-width-lg: 960px;  /* Laptops */
+  --container-width-xl: 1140px; /* Desktops */
+  --container-width-xxl: 1320px; /* Large desktops / 4K screens */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,3 +71,46 @@ a {
 h1 {
   font-family: var(--font-nunito);
 }
+
+/* Default Container (Mobile-First) */
+.container {
+  width: 100%;
+  max-width: var(--container-width-xs);
+  margin: 0 auto; /* Center container */
+}
+
+/* Tablet (≥576px) */
+@media (min-width: 576px) {
+  .container {
+    max-width: var(--container-width-sm);
+  }
+}
+
+/* Small Laptops & Tablets (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+  }
+}
+
+/* Laptops & Desktops (≥992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: var(--container-width-lg);
+  }
+}
+
+/* Large Desktops (≥1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-width-xl);
+  }
+}
+
+/* Ultra-Wide Screens (≥1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: var(--container-width-xxl);
+  }
+}
+
