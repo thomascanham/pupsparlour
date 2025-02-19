@@ -1,6 +1,26 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --color-primary: #92c5eb;
+
+  /* Shades of Primary */
+  --color-primary-light: #b3d7f3;  /* Lighter variant */
+  --color-primary-dark: #6daedb;   /* Darker variant */
+
+  /* Neutral Colors */
+  --color-background: #f8f9fa;     /* Light background */
+  --color-surface: #ffffff;        /* White for cards & elements */
+  --color-border: #d1d5db;         /* Soft gray for borders */
+
+  /* Text Colors */
+  --color-text: #333333;           /* Default text */
+  --color-text-light: #555555;     /* Secondary text */
+  --color-text-inverted: #ffffff;  /* Text on dark elements */
+
+  /* Button & Hover States */
+  --color-button: #6daedb;         /* Button background */
+  --color-button-hover: #5c9cc7;   /* Darker hover effect */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,8 +37,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--color-text);
+  background: var(--color-background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,4 +59,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+h1 {
+  font-family: var(--font-nunito);
 }

@@ -1,0 +1,73 @@
+/* Reset all margins and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the border-box model for all elements */
+html {
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove text decoration for links */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Reset table layout */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Ensure images and other media are responsive */
+img,
+picture,
+video,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Normalize font settings */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Reset form elements */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Reset default form appearance */
+input[type="checkbox"],
+input[type="radio"] {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* Ensure consistent box-sizing */
+* {
+  box-sizing: inherit;
+}
